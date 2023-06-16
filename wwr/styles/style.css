@@ -225,6 +225,9 @@ footer {
 .card-img:hover {
     opacity: .6;
     transform: scale(1.1)
+
+/*START FOR PAGE RATES AND DATES*/
+
 }
 #rates {
     display: grid;
