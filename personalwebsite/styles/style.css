@@ -195,3 +195,127 @@ footer {
     display: none;
   }
 }
+
+/* MUNICIPALITIES */
+.municipalities-seal {
+  display: grid;
+  grid-template-columns: 20px auto 20px auto 20px auto 20px;
+  grid-template-rows:  300px 300px 300px 300px 300px;
+  padding-top: 50px;
+
+}
+.alfonso-card {
+  grid-column: 2/3;
+  padding-left: 200px;
+}
+.alfonso-img {
+  width: 200px;
+}
+.ambaguio-card {
+  grid-column: 4/5;
+  padding-left: 200px;
+}
+.ambaguio-img {
+  width: 200px;
+}
+.aritao-card {
+  grid-column: 6/7;
+  padding-left: 200px;
+}
+.aritao-img{
+  width: 200px;
+}
+.bagabag-card {
+  grid-column: 2/3;
+  grid-row: 2/3;
+  height: 10px;
+  padding-left: 200px;
+}
+.bambang-card{
+  grid-column: 4/5;
+  grid-row: 2/3;
+  padding-left: 200px;
+}
+.bambang-img {
+  width: 200px;
+}
+.bayombong-card {
+  grid-column: 6/7;
+  grid-row: 2/3;
+  padding-left: 200px;
+}
+.bayombong-img {
+  width: 200px;
+}
+.diadi-card {
+  grid-column: 2/3;
+  grid-row: 3/4;
+  padding-left: 200px;
+}
+.diadi-img {
+width: 200px;
+}
+.ddn-card {
+  grid-column: 4/5;
+  grid-row: 3/4;
+  padding-left: 200px;
+}
+.ddn-img{
+  width: 200px;
+}
+.dds-card {
+  grid-column: 6/7;
+  grid-row: 3/4;
+  padding-left: 200px;
+}
+.dds-img {
+  width: 200px;
+}
+.kasibu-card {
+  grid-column: 2/3;
+  grid-row: 4/5;
+  padding-left: 200px;
+}
+.kasibu-img {
+  width: 200px;
+}
+.kayapa-card {
+  grid-column: 4/5;
+  grid-row: 4/5;
+  padding-left: 200px;
+}
+.kayapa-img {
+  width: 200px;
+}
+.quezon-card {
+  grid-column: 6/7;
+  grid-row: 4/5;
+  padding-left: 200px;
+}
+.quezon-img {
+  width: 200px;
+}
+.santa-card {
+  grid-column: 2/3;
+  grid-row: 5/6;
+  padding-left: 200px;
+}
+.santa-img {
+  width: 200px;
+}
+.solano-card{
+  grid-column: 4/5;
+  grid-row: 5/6;
+  padding-left: 200px;
+}
+.solano-img {
+  width: 200px;
+}
+.villaverde-card{
+  grid-column: 6/7;
+  grid-row: 5/6;
+  padding-left: 200px;
+}
+.villaverde-img {
+  width: 200px;
+}
