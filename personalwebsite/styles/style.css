@@ -70,8 +70,10 @@ nav a:hover {
 }
 main {
     display: grid;
-    grid-template-columns: 1fr 100px 1fr 100px 1fr;
-    grid-template-rows: 100px 100px 100px 100px 100px 100px;
+    grid-template-columns: 800px 50px auto;
+    grid-template-rows: 700px 50px 700px;
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 #home-box {
     padding-top: 50px;
@@ -90,33 +92,104 @@ main {
     border: 10px solid #716d5b;
     border-radius: 20px;
 }
-footer {
-    display: grid;
-    grid-template-columns: 500px 500px 500px 500px 500px;
-    grid-template-rows: 500px 500px 500px 500px 500px;
-}
-.fb-card {
+.mapmain-img {
   grid-column: 1/2;
+  grid-row: 1/2;
+  width: 100%;
+  height: 100%;
+}
+.mapsub-card{
+  grid-column: 3/4;
+  grid-row: 3/4;
+}
+.mapmainsub-img {
+  width: 100%;
+  height: 100%;
+}
+.msg-1{
+  grid-column: 3/4;
+  grid-row: 1/2;
+  font-size: 33px;
+  text-align: justify;
+}
+.msg-2{
+  grid-column: 1/2;
+  grid-row: 3/4;
+  text-align: justify;
+  font-size: 32.5px;
+}
+footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center
+}
+footer {
+  color:#627543;
+  padding: 25px 50px;
+  background-color: #ebcc6f;
+  font-size: 2em;
+}
+footer a {
+  color:#627543;
+  text-decoration: none;
+}
+footer a:hover {
+  color: red;
 }
 
-.fb-img{
-    height: 100px;
-    width: 100px;
-    grid-column: 1/2;
-    grid-row: 1/2;
+.updates-main {
+  display: grid;
+  grid-template-columns: 950px 645px;
+  grid-template-rows: 100px 400px 70px 500px ;
+  padding-top:20px;
+  padding-bottom: 30px;
 }
-.wa-img {
-    height: 100px;
-    width: 100px;
-    grid-column: 1/2;
-    grid-row: 1/3;
+.updates-card{
+  grid-column: 1/2;
 }
-.tw-img {
-    height: 100px;
-    width: 100px;
-    grid-column: 1/2;
-    grid-row: 1/3;
+.ammungan-img{
+  width: 100%;
+  height: 100%;
 }
+.detour-card{
+  grid-column: 1/2;
+  grid-row: 4/5;
+}
+.detour-img{
+  width: 100%;
+  height: 100%;
+}
+.detour-msg {
+  grid-column: 1/2;
+  grid-row: 3/4;
+  color: green;
+  background-color: #ebcc6f;
+  font-size: 22px;
+}
+.happenings-msg {
+  padding-top: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-size: 20.5px;
+  grid-column: 2/3;
+  grid-row: 1/3;
+  text-align: justify;
+}
+.wedup-img{
+  grid-column:2/3 ;
+  grid-row: 4/5;
+  width: 100%;
+  height: 100%;
+}
+.weather-msg {
+  color: green;
+  background-color: #ebcc6f;
+  text-align: center;
+  font-size: 22px;
+  
+}
+
+
 
 /* Added for the Ratings Sections */
 * {
@@ -206,10 +279,17 @@ footer {
 .alfonso-card {
   grid-column: 2/3;
   padding-left: 180px;
-  
 }
 .alfonso-img {
   width: 200px;
+  border-radius: 50%;
+  border: 15px solid #627543;
+  transition: transform .5s;
+  box-shadow: 5px 5px 10px #6f7364;;
+}
+.alfonso-img:hover{
+  opacity: .6;
+  transform: scale(1.1)
 }
 .ambaguio-card {
   grid-column: 4/5;
@@ -217,6 +297,14 @@ footer {
 }
 .ambaguio-img {
   width: 200px;
+  border-radius: 50%;
+  border: 15px solid #627543;
+  transition: transform .5s;
+  box-shadow: 5px 5px 10px #6f7364;;
+}
+.ambaguio-img:hover{
+  opacity: .6;
+  transform: scale(1.1)
 }
 .aritao-card {
   grid-column: 6/7;
@@ -224,6 +312,14 @@ footer {
 }
 .aritao-img{
   width: 200px;
+  border-radius: 50%;
+  border: 15px solid #627543;
+  transition: transform .5s;
+  box-shadow: 5px 5px 10px #6f7364;;
+}
+.aritao-img:hover{
+  opacity: .6;
+  transform: scale(1.1)
 }
 .bagabag-card {
   grid-column: 2/3;
@@ -231,6 +327,17 @@ footer {
   height: 10px;
   padding-left: 180px;
   padding-top: 50px;
+}
+.bagabag-img{
+  width: 200px;
+  border-radius: 50%;
+  border: 15px solid #627543;
+  transition: transform .5s;
+  box-shadow: 5px 5px 10px #6f7364;;
+}
+.bagabag-img:hover{
+  opacity: .6;
+  transform: scale(1.1)
 }
 .bambang-card{
   grid-column: 4/5;
@@ -240,6 +347,14 @@ footer {
 }
 .bambang-img {
   width: 200px;
+  border-radius: 50%;
+  border: 15px solid #627543;
+  transition: transform .5s;
+  box-shadow: 5px 5px 10px #6f7364;;
+}
+.bambang-img:hover{
+  opacity: .6;
+  transform: scale(1.1)
 }
 .bayombong-card {
   grid-column: 6/7;
@@ -249,6 +364,14 @@ footer {
 }
 .bayombong-img {
   width: 200px;
+  border-radius: 50%;
+  border: 15px solid #627543;
+  transition: transform .5s;
+  box-shadow: 5px 5px 10px #6f7364;;
+}
+.bayombong-img:hover{
+  opacity: .6;
+  transform: scale(1.1)
 }
 .diadi-card {
   grid-column: 2/3;
@@ -258,6 +381,14 @@ footer {
 }
 .diadi-img {
 width: 200px;
+border-radius: 50%;
+border: 15px solid #627543;
+transition: transform .5s;
+box-shadow: 5px 5px 10px #6f7364;;
+}
+.diadi-img:hover{
+  opacity: .6;
+  transform: scale(1.1)
 }
 .ddn-card {
   grid-column: 4/5;
@@ -267,6 +398,14 @@ width: 200px;
 }
 .ddn-img{
   width: 200px;
+  border-radius: 50%;
+  border: 15px solid #627543;
+  transition: transform .5s;
+  box-shadow: 5px 5px 10px #6f7364;;
+}
+.ddn-img:hover{
+  opacity: .6;
+  transform: scale(1.1)
 }
 .dds-card {
   grid-column: 6/7;
@@ -276,6 +415,14 @@ width: 200px;
 }
 .dds-img {
   width: 200px;
+  border-radius: 50%;
+  border: 15px solid #627543;
+  transition: transform .5s;
+  box-shadow: 5px 5px 10px #6f7364;;
+}
+.dds-img:hover{
+  opacity: .6;
+  transform: scale(1.1)
 }
 .kasibu-card {
   grid-column: 2/3;
@@ -284,7 +431,15 @@ width: 200px;
   padding-top: 50px;
 }
 .kasibu-img {
-  width: 180px;
+  width: 200px;
+  border-radius: 50%;
+  border: 15px solid #627543;
+  transition: transform .5s;
+  box-shadow: 5px 5px 10px #6f7364;;
+}
+.kasibu-img:hover{
+  opacity: .6;
+  transform: scale(1.1)
 }
 .kayapa-card {
   grid-column: 4/5;
@@ -294,6 +449,14 @@ width: 200px;
 }
 .kayapa-img {
   width: 200px;
+  border-radius: 50%;
+  border: 15px solid #627543;
+  transition: transform .5s;
+  box-shadow: 5px 5px 10px #6f7364;;
+}
+.kayapa-img:hover{
+  opacity: .6;
+  transform: scale(1.1)
 }
 .quezon-card {
   grid-column: 6/7;
@@ -303,6 +466,14 @@ width: 200px;
 }
 .quezon-img {
   width: 200px;
+  border-radius: 50%;
+  border: 15px solid #627543;
+  transition: transform .5s;
+  box-shadow: 5px 5px 10px #6f7364;;
+}
+.quezon-img:hover{
+  opacity: .6;
+  transform: scale(1.1)
 }
 .santa-card {
   grid-column: 2/3;
@@ -312,6 +483,14 @@ width: 200px;
 }
 .santa-img {
   width: 200px;
+  border-radius: 50%;
+  border: 15px solid #627543;
+  transition: transform .5s;
+  box-shadow: 5px 5px 10px #6f7364;;
+}
+.santa-img:hover{
+  opacity: .6;
+  transform: scale(1.1)
 }
 .solano-card{
   grid-column: 4/5;
@@ -321,6 +500,14 @@ width: 200px;
 }
 .solano-img {
   width: 200px;
+  border-radius: 50%;
+  border: 15px solid #627543;
+  transition: transform .5s;
+  box-shadow: 5px 5px 10px #6f7364;;
+}
+.solano-img:hover{
+  opacity: .6;
+  transform: scale(1.1)
 }
 .villaverde-card{
   grid-column: 6/7;
@@ -330,4 +517,12 @@ width: 200px;
 }
 .villaverde-img {
   width: 200px;
+  border-radius: 50%;
+  border: 15px solid #627543;
+  transition: transform .5s;
+  box-shadow: 5px 5px 10px #6f7364;;
+}
+.villaverde-img:hover{
+  opacity: .6;
+  transform: scale(1.1)
 }
