@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+
+:root {
+    /* change the values below to your colors from your palette */
+    --primary-color: #627543;
+    --secondary-color: #0d070a ;
+    --accent1-color: #716d5b;
+    --accent2-color: #ebcc6f;
+  
+    /* change the values below to your chosen font(s) */
+    --heading-font: "Russo One";
+    --paragraph-font: "Poppins";
+}  
+
+header {
+    display: grid;
+    grid-template-columns: 150px auto;
+    grid-template-rows: 150px;
+}
+#content{
+    max-width: 1600px;
+    margin: 0 auto;
+    margin-top: 0%;
+    margin-bottom: 0%;
+    margin-left: auto;
+    margin-right: auto;
+}
+nav {
+    display: grid;
+    display: flex;
+    justify-content: space-around;
+}
+#logo_nv{
+    padding-top: 5px;
+    justify-self: center;
+    align-self: center;
+}
+nav a{
+    text-align: center;
+    color: black;
+    text-decoration: none;
+    padding: 35px;
+    font-size: 2em;
+    font-family: 'Russo One','Poppins';
+}
+nav a:hover {
+    background-color: #627543;
+    color: #ebcc6f;
+}
+footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center
+  }
+  footer {
+    color:#627543;
+    padding: 25px 50px;
+    background-color: #ebcc6f;
+    font-size: 2em;
+  }
+  footer a {
+    color:#627543;
+    text-decoration: none;
+  }
+  footer a:hover {
+    color: red;
+  }
+  .explanation-main {
+    display: grid;
+    grid-template-rows: 350px 200px 150px 200px 200px 1000px 20px ;
+  }
+  .index-msg {
+    font-size: 21px;
+    background-color: bisque;
+  }
+  .muni-msg {
+    font-size: 23px;
+    background-color: bisque;
+  }
+  .up-msg {
+    font-size: 20px;
+    background-color: bisque;
+  }
+  .others-msg {
+    font-size: 20px;
+    background-color: bisque;
+  }
+  .final-msg {
+    font-size: 21px;
+    background-color: beige;
+  }
+  .discover-msg {
+    font-size: 20px;
+    background-color: beige;
+  }
